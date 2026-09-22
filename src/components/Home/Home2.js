@@ -13,37 +13,28 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              Soy estudiante de la Licenciatura en Informática en la
+              Universidad Nacional del Oeste y egresada del bootcamp Full Stack
+              Web Developer de Henry.
               <br />
               <br />
-              I’m proficient in
+              Me apasiona el ecosistema
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript y TypeScript
                 </b>
-              </i>
-              — and I enjoy working across both backend and frontend stacks.
+              </i>{" "}
+              — especialmente React, Next.js y Node.js.
               <br />
               <br />
-              My key areas of interest include developing
+              Disfruto crear productos con
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  código limpio, buena usabilidad y una experiencia de usuario
+                  cuidada.
                 </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
               </i>
             </p>
           </Col>

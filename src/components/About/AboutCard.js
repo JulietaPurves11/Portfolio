@@ -8,37 +8,35 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
-            <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            Soy <span className="purple">Julieta Purves</span>, estudiante de
+            la Licenciatura en Informática en la{" "}
+            <span className="purple">Universidad Nacional del Oeste</span> y
+            egresada del bootcamp{" "}
+            <span className="purple">Full Stack Web Developer de Henry</span>.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            Me apasiona el ecosistema{" "}
+            <span className="purple">JavaScript/TypeScript</span>, con foco en
+            React, Next.js y Node.js, además de crear soluciones con código
+            limpio, buena usabilidad y una experiencia de usuario cuidada.
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight /> Frontend con React.js, Next.js y TypeScript
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Backend con Node.js, Express.js y PostgreSQL
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Diseño responsive y enfoque Mobile-First
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Construyo interfaces web modernas y eficientes."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Julieta Purves</footer>
         </blockquote>
       </Card.Body>
     </Card>
