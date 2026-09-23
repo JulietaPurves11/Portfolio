@@ -144,6 +144,8 @@ button:focus,
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav .nav-link,
@@ -424,8 +426,15 @@ button:focus,
 }
 
 .fork-btn {
-  padding-top: 10px;
   font-size: 1em !important;
+}
+
+.fork-btn-inner {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  margin: 0 !important;
 }
 
 /* About and skills */
@@ -495,6 +504,94 @@ button:focus,
 .resume {
   justify-content: center;
   padding: 50px 0;
+}
+
+/* Developer terminal */
+.developer-terminal {
+  max-width: 620px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  text-align: left;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 1rem;
+  box-shadow: 0 12px 25px rgba(17, 24, 39, 0.16);
+}
+
+.developer-terminal-header {
+  display: flex;
+  gap: 0.45rem;
+  padding: 0.75rem 1rem;
+  background: #111827;
+}
+
+.developer-terminal-header span {
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #f9a8d4;
+  border-radius: 50%;
+}
+
+.developer-terminal-header span:nth-child(2) {
+  background: #fbcfe8;
+}
+
+.developer-terminal-header span:nth-child(3) {
+  background: #e9d5ff;
+}
+
+.developer-terminal pre {
+  margin: 0;
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+}
+
+.developer-terminal code {
+  color: #fce7f3;
+  font-family: "PT Mono", monospace;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+/* GitHub activity */
+.github-activity {
+  color: var(--text) !important;
+}
+
+.github-activity > div {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  box-shadow: 0 5px 18px rgba(17, 24, 39, 0.06);
+}
+
+.github-activity svg text {
+  fill: var(--text-muted);
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.github-activity svg [data-level="0"] {
+  fill: #fce7f3;
+}
+
+.github-activity svg [data-level="1"] {
+  fill: #fbcfe8;
+}
+
+.github-activity svg [data-level="2"] {
+  fill: #f9a8d4;
+}
+
+.github-activity svg [data-level="3"] {
+  fill: #ec4899;
+}
+
+.github-activity svg [data-level="4"] {
+  fill: #be185d;
 }
 
 @media (max-width: 767px) {

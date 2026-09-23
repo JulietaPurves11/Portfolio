@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar-jp.jpg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -10,7 +10,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              UN POCO <span className="purple">SOBRE MÍ</span>
             </h1>
             <p className="home-about-body">
               Soy estudiante de la Licenciatura en Informática en la
@@ -37,6 +37,23 @@ function Home2() {
                 </b>
               </i>
             </p>
+            <div className="developer-terminal" aria-label="Información de Julieta">
+              <div className="developer-terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <pre>
+                <code>
+{`const julieta = {
+  role: "Full Stack Developer",
+  specialty: "Frontend (React / JS / TS)",
+  location: "Buenos Aires, Argentina",
+  coffeeLevel: "100%"
+};`}
+                </code>
+              </pre>
+            </div>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
