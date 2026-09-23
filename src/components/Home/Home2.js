@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar-jp.jpg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
+  const [showAvatarEffect, setShowAvatarEffect] = useState(false);
+
+  useEffect(() => {
+    if (!showAvatarEffect) {
+      return undefined;
+    }
+
+    const timer = window.setTimeout(() => setShowAvatarEffect(false), 1500);
+    return () => window.clearTimeout(timer);
+  }, [showAvatarEffect]);
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -56,8 +67,23 @@ function Home2() {
             </div>
           </Col>
           <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+            <Tilt className={showAvatarEffect ? "avatar-celebrating" : ""}>
+              <button
+                type="button"
+                className="avatar-trigger"
+                onClick={() => setShowAvatarEffect(true)}
+                aria-label="Activar efecto del avatar"
+              >
+                <img src={myImg} className="img-fluid" alt="avatar de Julieta Purves" />
+                {showAvatarEffect && (
+                  <span className="avatar-hearts" aria-hidden="true">
+                    <span>♥</span>
+                    <span>✦</span>
+                    <span>♥</span>
+                    <span>✧</span>
+                  </span>
+                )}
+              </button>
             </Tilt>
           </Col>
         </Row>

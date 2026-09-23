@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/hero-img-jp.png";
-import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillMail } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
+  const [emailCopied, setEmailCopied] = useState(false);
+
+  const handleEmailClick = async () => {
+    try {
+      await navigator.clipboard.writeText("purvesjulieta11@gmail.com");
+      setEmailCopied(true);
+      window.setTimeout(() => setEmailCopied(false), 1500);
+    } catch (error) {
+      console.error("No se pudo copiar el email al portapapeles.", error);
+    }
+  };
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -23,7 +33,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                SOY
                 <strong className="main-name"> JULIETA PURVES</strong>
               </h1>
 
@@ -78,7 +88,22 @@ function Home() {
                   <FaLinkedinIn />
                 </a>
               </li>
+              <li className="social-icons">
+                <a
+                  href="mailto:purvesjulieta11@gmail.com"
+                  onClick={handleEmailClick}
+                  aria-label="Copiar email y enviar un correo a Julieta Purves"
+                  className="icon-colour home-social-icons"
+                >
+                  <AiFillMail />
+                </a>
+              </li>
             </ul>
+            {emailCopied && (
+              <div className="email-copy-notification" role="status">
+                ¡Email copiado! 💖
+              </div>
+            )}
           </Col>
         </Row>
       </Container>

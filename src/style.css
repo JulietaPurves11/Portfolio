@@ -330,6 +330,18 @@ button:focus,
   box-shadow: 0 8px 18px rgba(236, 72, 153, 0.25);
 }
 
+.email-copy-notification {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.9rem;
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: var(--surface-soft);
+  border: 1px solid var(--primary-soft);
+  border-radius: 999px;
+}
+
 .icon-colour {
   color: var(--primary) !important;
 }
@@ -504,6 +516,81 @@ button:focus,
 .resume {
   justify-content: center;
   padding: 50px 0;
+}
+
+/* Avatar easter egg */
+.avatar-trigger {
+  position: relative;
+  display: block;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.avatar-trigger:focus-visible {
+  border-radius: 1rem;
+}
+
+.avatar-celebrating {
+  animation: avatar-celebration 1.5s ease both;
+}
+
+.avatar-hearts {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.avatar-hearts span {
+  position: absolute;
+  color: var(--primary-bright);
+  font-size: 1.4rem;
+  text-shadow: 0 2px 8px rgba(236, 72, 153, 0.35);
+  animation: heart-float 1.5s ease-out forwards;
+}
+
+.avatar-hearts span:nth-child(1) {
+  left: 8%;
+  top: 40%;
+}
+
+.avatar-hearts span:nth-child(2) {
+  left: 28%;
+  top: 12%;
+  animation-delay: 0.08s;
+}
+
+.avatar-hearts span:nth-child(3) {
+  right: 12%;
+  top: 30%;
+  animation-delay: 0.16s;
+}
+
+.avatar-hearts span:nth-child(4) {
+  right: 28%;
+  bottom: 12%;
+  animation-delay: 0.24s;
+}
+
+@keyframes avatar-celebration {
+  0%, 100% { transform: scale(1) rotate(0); }
+  35% { transform: scale(1.04) rotate(-2deg); }
+  70% { transform: scale(1.04) rotate(2deg); }
+}
+
+@keyframes heart-float {
+  0% {
+    opacity: 0;
+    transform: translateY(15px) scale(0.6) rotate(-10deg);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-55px) scale(1.1) rotate(10deg);
+  }
 }
 
 /* Developer terminal */
