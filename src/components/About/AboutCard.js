@@ -8,33 +8,51 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Soy <span className="purple">Julieta Purves</span>, estudiante de
-            la Licenciatura en Informática en la{" "}
-            <span className="purple">Universidad Nacional del Oeste</span> y
-            egresada del bootcamp{" "}
-            <span className="purple">Full Stack Web Developer de Henry</span>.
+            Soy <span className="purple">Julieta Purves</span>, estudiante de la
+            Licenciatura en Informática (UNO) y Full Stack Developer graduada de
+            Henry.
             <br />
             <br />
-            Me apasiona el ecosistema{" "}
-            <span className="purple">JavaScript/TypeScript</span>, con foco en
-            React, Next.js y Node.js, además de crear soluciones con código
-            limpio, buena usabilidad y una experiencia de usuario cuidada.
+            Mi parte favorita de programar es ver cómo cobra vida un diseño desde
+            cero y lograr que el resultado final supere lo que imaginé en mi
+            cabeza. Me motiva cuidar cada detalle visual, escribir código limpio
+            y aprender constantemente nuevas tecnologías.
+            <br />
+            <br />
+            <span className="purple">👉</span> Frontend con React.js, Next.js y
+            TypeScript
+            <br />
+            <span className="purple">👉</span> Backend con Node.js, Express.js y
+            PostgreSQL
+            <br />
+            <span className="purple">👉</span> Diseño responsive, UI/UX cuidado y
+            componentes reutilizables
+            <br />
+            <br />
+            Fuera de la pantalla:
+            <br />
+            Cuando no estoy escribiendo código o estudiando, me vas a encontrar
+            mateando al sol, viendo series o películas, jugando en la compu,
+            cocinando algún postre, leyendo o saliendo a pasear y conocer
+            lugares nuevos. Creo en el equilibrio entre enfocarme al 100% en mis
+            proyectos y disfrutar de las pequeñas cosas.
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Frontend con React.js, Next.js y TypeScript
+              <ImPointRight /> experiencia de usuario y estética visual
             </li>
             <li className="about-activity">
-              <ImPointRight /> Backend con Node.js, Express.js y PostgreSQL
+              <ImPointRight /> código limpio y componentes reutilizables
             </li>
             <li className="about-activity">
-              <ImPointRight /> Diseño responsive y enfoque Mobile-First
+              <ImPointRight /> aprendizaje constante y curiosidad técnica
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Construyo interfaces web modernas y eficientes."{" "}
+            "Diseño con ojo crítico, programo con curiosidad y disfruto el
+            proceso."
           </p>
           <footer className="blockquote-footer">Julieta Purves</footer>
         </blockquote>
