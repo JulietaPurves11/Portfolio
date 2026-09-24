@@ -29,24 +29,14 @@ function Home2() {
               Web Developer de Henry.
               <br />
               <br />
-              Me apasiona el ecosistema
-              <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript y TypeScript
-                </b>
-              </i>{" "}
-              — especialmente React, Next.js y Node.js.
+              Me apasiona el ecosistema JavaScript y TypeScript — especialmente
+              React, Next.js y Node.js.
               <br />
               <br />
-              Disfruto crear productos con
-              <i>
-                <b className="purple">
-                  {" "}
-                  código limpio, buena usabilidad y una experiencia de usuario
-                  cuidada.
-                </b>
-              </i>
+              Disfruto transformar ideas abstractas en interfaces vivas,
+              cuidadas al detalle y súper funcionales. Me considero una persona
+              muy organizada, curiosa y perfeccionista con la estética y la
+              experiencia del usuario.
             </p>
             <div className="developer-terminal" aria-label="Información de Julieta">
               <div className="developer-terminal-header">
