@@ -12,12 +12,10 @@ function AboutCard() {
             Licenciatura en Informática (UNO) y Full Stack Developer graduada de
             Henry.
             <br />
-            <br />
             Mi parte favorita de programar es ver cómo cobra vida un diseño desde
             cero y lograr que el resultado final supere lo que imaginé en mi
             cabeza. Me motiva cuidar cada detalle visual, escribir código limpio
             y aprender constantemente nuevas tecnologías.
-            <br />
             <br />
             <ul>
             <li className="about-activity">
@@ -30,8 +28,6 @@ function AboutCard() {
               <ImPointRight /> aprendizaje constante y curiosidad técnica
             </li>
           </ul>
-            <br />
-            <br />
             Fuera de la pantalla:
             <br />
             Cuando no estoy escribiendo código o estudiando, me vas a encontrar
