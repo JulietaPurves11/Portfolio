@@ -4,7 +4,7 @@
 </h1>
 
 <div align="center">
-  <img alt="Demo Portfolio Julieta Purves" src="./src/Assets/preview.png" width="800px" />
+  <img alt="Demo Portfolio Julieta Purves" src="Images/preview.png" width="800px" />
 </div>
 
 <p align="center">
