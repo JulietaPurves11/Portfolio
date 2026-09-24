@@ -19,14 +19,17 @@ function AboutCard() {
             y aprender constantemente nuevas tecnologías.
             <br />
             <br />
-            <span className="purple">👉</span> Frontend con React.js, Next.js y
-            TypeScript
-            <br />
-            <span className="purple">👉</span> Backend con Node.js, Express.js y
-            PostgreSQL
-            <br />
-            <span className="purple">👉</span> Diseño responsive, UI/UX cuidado y
-            componentes reutilizables
+            <ul>
+            <li className="about-activity">
+              <ImPointRight /> experiencia de usuario y estética visual
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> código limpio y componentes reutilizables
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> aprendizaje constante y curiosidad técnica
+            </li>
+          </ul>
             <br />
             <br />
             Fuera de la pantalla:
@@ -38,17 +41,7 @@ function AboutCard() {
             proyectos y disfrutar de las pequeñas cosas.
           </p>
 
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> experiencia de usuario y estética visual
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> código limpio y componentes reutilizables
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> aprendizaje constante y curiosidad técnica
-            </li>
-          </ul>
+          
 
           <p style={{ color: "rgb(155 126 172)" }}>
             "Diseño con ojo crítico, programo con curiosidad y disfruto el
